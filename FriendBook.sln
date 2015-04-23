@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendBook", "FriendBook\FriendBook.csproj", "{E0DBA0F9-968D-4486-9A67-1C3CF3635251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendBook.Tests", "FriendBook.Tests\FriendBook.Tests.csproj", "{7FB3C528-336B-4331-A0F1-C0CBED635A82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0DBA0F9-968D-4486-9A67-1C3CF3635251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0DBA0F9-968D-4486-9A67-1C3CF3635251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0DBA0F9-968D-4486-9A67-1C3CF3635251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0DBA0F9-968D-4486-9A67-1C3CF3635251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB3C528-336B-4331-A0F1-C0CBED635A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB3C528-336B-4331-A0F1-C0CBED635A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB3C528-336B-4331-A0F1-C0CBED635A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB3C528-336B-4331-A0F1-C0CBED635A82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
