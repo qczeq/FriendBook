@@ -16,7 +16,7 @@ namespace FriendBook.Utils
             if (_usersDictionary.UserExists(userName))
             {
                 var userPassword = _usersDictionary.GetPassword(userName);
-                return string.Equals(userPassword, userName);
+                return string.Equals(userPassword, password);
             }
 
             return false;

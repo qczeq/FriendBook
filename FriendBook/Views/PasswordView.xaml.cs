@@ -17,14 +17,21 @@ using System.Windows.Shapes;
 namespace FriendBook.Views
 {
     /// <summary>
-    /// Interaction logic for FriendsListView.xaml
+    /// Interaction logic for PasswordView.xaml
     /// </summary>
-    public partial class FriendsListView : UserControl
+    public partial class PasswordView : UserControl
     {
-        public FriendsListView()
+        public PasswordView()
         {
             InitializeComponent();
-            DataContext = new FriendsListViewModel();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext != null)
+            {
+                ((PasswordViewModel)this.DataContext).Password = ((PasswordBox)sender).Password;
+            }
         }
     }
 }
