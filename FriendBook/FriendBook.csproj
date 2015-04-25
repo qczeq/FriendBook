@@ -69,6 +69,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Friend.cs" />
+    <Compile Include="Models\FriendsDictionary.cs" />
     <Compile Include="Models\UsersDictionary.cs" />
     <Compile Include="Utils\AuthService.cs" />
     <Compile Include="ViewModels\FriendsListViewModel.cs" />

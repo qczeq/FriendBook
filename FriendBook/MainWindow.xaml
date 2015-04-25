@@ -8,7 +8,7 @@
         <viewModels:MainWindowViewModel/>
     </Window.DataContext>
     
-    <ContentControl Content="{Binding CurrentViewModel}" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <ContentControl Content="{Binding CurrentViewModel}">
         <ContentControl.Resources>
             <DataTemplate DataType="{x:Type viewModels:PasswordViewModel}">
                 <views:PasswordView/>

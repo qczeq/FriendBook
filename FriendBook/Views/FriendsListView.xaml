@@ -6,6 +6,38 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Label>Friend List</Label>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <ListBox x:Name="FriendsList" ItemsSource="{Binding Friends}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Name}"></Label>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+
+
+        <StackPanel Grid.Column="1">
+            <Label>Name:</Label>
+            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Name}"/>
+            <Label>Surname:</Label>
+            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Surname}"/>
+            <Label>Age:</Label>
+            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Age}"/>
+            <Label>Height:</Label>
+            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Height}"/>
+            <Label>Width:</Label>
+            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Width}"/>
+        </StackPanel>
+
+
     </Grid>
 </UserControl>
