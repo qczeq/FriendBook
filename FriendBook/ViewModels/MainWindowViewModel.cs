@@ -7,12 +7,11 @@ namespace FriendBook.ViewModels
 
         public MainWindowViewModel()
         {
-            //var passwordViewModel = new PasswordViewModel();
-            var passwordViewModel = new FriendsListViewModel();
-            //passwordViewModel.SignIn = () =>
-            //{
-            //    CurrentViewModel = new FriendsListViewModel();
-            //};
+            var passwordViewModel = new PasswordViewModel();
+            passwordViewModel.SignIn = () =>
+            {
+                CurrentViewModel = new FriendsListViewModel();
+            };
 
             CurrentViewModel = passwordViewModel;
         }

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows.Media.Imaging;
 
 namespace FriendBook.Models
 {
@@ -10,12 +12,13 @@ namespace FriendBook.Models
         {
             _friends.Add(new Friend()
             {
-                Age=22,
-                Gender="Male",
-                Height=200,
-                Weight=120,
-                Name="Jan",
-                Surname="Kowalski"
+                Age = 22,
+                Gender = "Male",
+                Height = 200,
+                Weight = 120,
+                Name = "Jan",
+                Surname = "Kowalski",
+                Avatar = new BitmapImage(new Uri(@"/FriendBook;component/Avatars/01.jpg", UriKind.Relative))
             });
 
             _friends.Add(new Friend()
@@ -25,7 +28,8 @@ namespace FriendBook.Models
                 Height = 170,
                 Weight = 70,
                 Name = "Maria",
-                Surname = "Kowalska"
+                Surname = "Kowalska",
+                Avatar = new BitmapImage(new Uri(@"/FriendBook;component/Avatars/02.jpg", UriKind.Relative))
             });
 
             _friends.Add(new Friend()
@@ -35,7 +39,8 @@ namespace FriendBook.Models
                 Height = 150,
                 Weight = 45,
                 Name = "Basia",
-                Surname = "Kwiatkowska"
+                Surname = "Kwiatkowska",
+                Avatar = new BitmapImage(new Uri(@"/FriendBook;component/Avatars/03.jpg", UriKind.Relative))
             });
 
             _friends.Add(new Friend()
@@ -45,7 +50,8 @@ namespace FriendBook.Models
                 Height = 168,
                 Weight = 45,
                 Name = "Monika",
-                Surname = "Monikowska"
+                Surname = "Monikowska",
+                Avatar = new BitmapImage(new Uri(@"/FriendBook;component/Avatars/04.jpg", UriKind.Relative))
             });
 
             _friends.Add(new Friend()
@@ -55,7 +61,8 @@ namespace FriendBook.Models
                 Height = 168,
                 Weight = 45,
                 Name = "Anna",
-                Surname = "Kowalska"
+                Surname = "Kowalska",
+                Avatar = new BitmapImage(new Uri(@"/FriendBook;component/Avatars/05.jpg", UriKind.Relative))
             });
 
             _friends.Add(new Friend()
@@ -65,7 +72,8 @@ namespace FriendBook.Models
                 Height = 168,
                 Weight = 50,
                 Name = "Kazik",
-                Surname = "Kowalski"
+                Surname = "Kowalski",
+                Avatar = new BitmapImage(new Uri(@"/FriendBook;component/Avatars/06.jpg", UriKind.Relative))
             });
         }
 

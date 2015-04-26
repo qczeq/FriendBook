@@ -1,4 +1,5 @@
 ﻿
+using System.Windows.Media.Imaging;
 namespace FriendBook.Models
 {
     public class Friend
@@ -14,5 +15,7 @@ namespace FriendBook.Models
         public int Height { get; set; }
 
         public int Weight { get; set; }
+
+        public BitmapImage Avatar { get; set; }
     }
 }

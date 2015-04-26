@@ -8,34 +8,42 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
-            <ColumnDefinition/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        
-        <ListBox x:Name="FriendsList" ItemsSource="{Binding Friends}">
+
+        <ListBox x:Name="FriendsList" ItemsSource="{Binding Friends}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="#3d3e44">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Label Content="{Binding Name}"></Label>
+                    <Border BorderBrush="Gray" BorderThickness="1" Padding="4" Margin="4" Background="#c8f463" Width="130">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Avatar}" Width="40" Height="40"/>
+                            <StackPanel Orientation="Vertical">
+                                <Label Content="{Binding Name}"></Label>
+                                <Label Content="{Binding Surname}"></Label>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel />
+                    <WrapPanel Orientation="Horizontal"/>
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
         </ListBox>
 
 
-        <StackPanel Grid.Column="1">
-            <Label>Name:</Label>
+        <StackPanel Grid.Column="1" Background="#dbdbdb">
+            <Label FontWeight="Bold">Name:</Label>
             <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Name}"/>
-            <Label>Surname:</Label>
+            <Label FontWeight="Bold">Surname:</Label>
             <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Surname}"/>
-            <Label>Age:</Label>
+            <Label FontWeight="Bold">Age:</Label>
             <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Age}"/>
-            <Label>Height:</Label>
+            <Label FontWeight="Bold">Height:</Label>
             <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Height}"/>
-            <Label>Width:</Label>
-            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Width}"/>
+            <Label FontWeight="Bold">Weight:</Label>
+            <Label Content="{Binding ElementName=FriendsList, Path=SelectedItem.Weight}"/>
         </StackPanel>
 
 

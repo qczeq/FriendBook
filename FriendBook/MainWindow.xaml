@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:viewModels="clr-namespace:FriendBook.ViewModels"
         xmlns:views="clr-namespace:FriendBook.Views"
-        Title="Friedn Book" Height="350" Width="525" Background="White">
+        Title="Friend Book" Height="350" Width="525" Background="#dbdbdb">
     <Window.DataContext>
         <viewModels:MainWindowViewModel/>
     </Window.DataContext>
