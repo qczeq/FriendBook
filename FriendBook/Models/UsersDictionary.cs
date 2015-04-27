@@ -14,6 +14,11 @@ namespace FriendBook.Models
 
         public bool UserExists(string userName)
         {
+            if (string.IsNullOrEmpty(userName))
+            {
+                return false;
+            }
+
             return _users.ContainsKey(userName.Trim());
         }
 
