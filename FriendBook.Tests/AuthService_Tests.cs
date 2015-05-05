@@ -68,7 +68,7 @@ namespace FriendBook.Tests
             var actualResult = _authService.CanAuthenticate(userName, password);
 
             //Assert
-            Assert.IsFalse(actualResult);
+            Assert.IsTrue(actualResult);
         }
     }
 }
